@@ -70,7 +70,6 @@ public class Player : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log("Hi");
         gameManager = GameManager.instance;
         defaultGravity = rb.gravityScale;
         UpdateGameDiff();
