@@ -3039,7 +3039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultInfo: {fileID: 2107069934}
-  description: For beginners, no health is lost,no fruits lost
+  description: For beginners,no fruits lost
 --- !u!1 &482869153
 GameObject:
   m_ObjectHideFlags: 0
@@ -13986,7 +13986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5297380241007138700, guid: 70c351e9b7e175349bf01383519392c3, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8441818122813502295, guid: 70c351e9b7e175349bf01383519392c3, type: 3}
       propertyPath: m_Name

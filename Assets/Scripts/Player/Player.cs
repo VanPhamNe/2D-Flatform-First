@@ -257,8 +257,6 @@ public class Player : MonoBehaviour
             switch (gameDifficulty)
             {
                 case Difficult.Easy:
-                    break;
-
                 case Difficult.Normal:
                     playerHeal.LoseHeart(dameamount);
                     if (playerHeal.IsEmpty())
