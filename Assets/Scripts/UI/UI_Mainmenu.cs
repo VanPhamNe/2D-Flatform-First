@@ -60,4 +60,9 @@ public class UI_Mainmenu : MonoBehaviour
         SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("ContinueLevelNumber", 0));
         AudioManager.instance.PlaySFX(4);
     }
+    public void QuitGame()
+    {
+        Debug.Log("Quit Game");
+        Application.Quit();
+    }
 }

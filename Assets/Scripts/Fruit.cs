@@ -24,7 +24,7 @@ public class Fruit : MonoBehaviour
         {
             gameManager.AddFruit();
             AudioManager.instance.PlaySFX(7);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             GameObject newFX = Instantiate(pickupVFX,transform.position,Quaternion.identity);
             Destroy(newFX, .5f);
         }

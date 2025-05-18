@@ -145,4 +145,16 @@ public class GameManager : MonoBehaviour
         int totalFruitsBank=PlayerPrefs.GetInt("TotalFruitsAmount");
         PlayerPrefs.SetInt("TotalFruitsAmount", totalFruitsBank + fruitCollect);
     }
+    public void ResetFruitsInLevel()
+    {
+        fruitCollect = 0;
+        UI_Ingame.instance.UpdateFruitUI(fruitCollect, totalFruits);
+
+        if (fruitParent == null) return;
+
+        foreach (Transform fruit in fruitParent)
+        {
+            fruit.gameObject.SetActive(true);
+        }
+    }
 }

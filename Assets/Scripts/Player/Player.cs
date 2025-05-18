@@ -281,6 +281,9 @@ public class Player : MonoBehaviour
                 PlayerManager.instance.RespawnPlayer();
                 break;
             case Difficult.Normal:
+                PlayerManager.instance.RespawnPlayer();
+                GameManager.instance.ResetFruitsInLevel(); 
+                break;
             case Difficult.Hard:
                 gameManager.RestartLevel();
                 break;
