@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        Debug.Log("tEST gIT");
         UpdateAirbornStatus();
         HandleEnemyDetected();
         if (!canControl)
