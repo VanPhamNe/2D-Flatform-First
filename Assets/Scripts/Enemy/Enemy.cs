@@ -49,17 +49,19 @@ public class Enemy : MonoBehaviour
             sr.flipX = false;
             Flip();
         }
+        PlayerManager.OnPlayerRespawn += UpdatePlayerPrefs;
+        //InvokeRepeating(nameof(UpdatePlayerPrefs), 0, 1f);
     }
-    //protected void UpdatePlayerPrefs()
-    //{
-    //    if (player == null || player.Equals(null))
-    //    {
-    //        player = PlayerManager.instance.player.transform;
-    //    }
+    protected void UpdatePlayerPrefs()
+    {
 
-    //    //player = PlayerManager.instance.player.transform;
+        if (player == null)
+        {
 
-    //}
+            player = PlayerManager.instance.player.transform;
+        }
+
+    }
     protected virtual void Update() { 
         HandleAnimation();
         HandleColision();
@@ -119,7 +121,7 @@ public class Enemy : MonoBehaviour
         {
             deathRotationDirection = deathRotationDirection * -1;
         }
-        //PlayerManager.OnPlayerRespawn -= UpdatePlayerPrefs;
+        PlayerManager.OnPlayerRespawn -= UpdatePlayerPrefs;
     }
 
     protected void EnableColliders(bool enable)
