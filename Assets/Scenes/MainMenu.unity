@@ -14095,6 +14095,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 313560620779724651, guid: 9e76c8e70f9318141afc00bcbc55a30b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563150335211451495, guid: 9e76c8e70f9318141afc00bcbc55a30b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1814099350448818016, guid: 9e76c8e70f9318141afc00bcbc55a30b, type: 3}
       propertyPath: bgm.Array.size
       value: 2
