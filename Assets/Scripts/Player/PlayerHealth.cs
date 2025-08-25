@@ -25,5 +25,10 @@ public class PlayerHealth : MonoBehaviour
         CurrentHearts = maxHearts;
         UI_Ingame.instance.UpdateHeathUI(CurrentHearts, maxHearts);
     }
+    public void AddHeart(int amount)
+    {
+        CurrentHearts = Mathf.Clamp(CurrentHearts + amount, 0, maxHearts);
+        UI_Ingame.instance.UpdateHeathUI(CurrentHearts, maxHearts);
+    }
 
 }
