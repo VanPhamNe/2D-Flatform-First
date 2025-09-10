@@ -72,6 +72,10 @@ public class UI_Mainmenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
         continueButton.SetActive(false);
+        for (int i = 0; i < skinSelection.skins.Length; i++)
+        {
+            skinSelection.skins[i].unlocked = false;
+        }
         skinSelection.UpdateDisplay();
     }
 }

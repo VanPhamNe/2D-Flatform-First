@@ -17,7 +17,7 @@ public class UI_SkinSelection : MonoBehaviour
     [SerializeField] private Animator display;
     [SerializeField] private int maxIndex;
     [Header("UI details")]
-    [SerializeField] private Skin[] skins;
+     public Skin[] skins;
     [SerializeField] private TextMeshProUGUI priceText;
     [SerializeField] private TextMeshProUGUI bankText;
     [SerializeField] private TextMeshProUGUI buySelectText;
