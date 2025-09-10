@@ -59,7 +59,7 @@ public class UI_SkinSelection : MonoBehaviour
         AudioManager.instance.PlaySFX(4);
         UpdateDisplay();
     }
-    private void UpdateDisplay() { 
+    public void UpdateDisplay() { 
         bankText.text = "Bank: " + FruitInBank();
         for (int i = 0; i < display.layerCount; i++)
         {

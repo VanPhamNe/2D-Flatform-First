@@ -6,11 +6,13 @@ public class UI_Mainmenu : MonoBehaviour
 {
     private UI_Fade fade;
     public string firstlevelname;
+    [SerializeField] private UI_SkinSelection skinSelection;
     [SerializeField] private GameObject[] uiElement;
     [SerializeField] private GameObject continueButton;
     private void Awake()
     {
         fade = GetComponentInChildren<UI_Fade>();
+        skinSelection = GetComponentInChildren<UI_SkinSelection>(true);
     }
     private void Start()
     {
@@ -64,5 +66,12 @@ public class UI_Mainmenu : MonoBehaviour
     {
         Debug.Log("Quit Game");
         Application.Quit();
+    }
+    public void ClearData()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        continueButton.SetActive(false);
+        skinSelection.UpdateDisplay();
     }
 }
