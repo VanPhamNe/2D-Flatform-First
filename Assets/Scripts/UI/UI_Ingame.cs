@@ -66,5 +66,4 @@ public class UI_Ingame : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-
 }
